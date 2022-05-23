@@ -2,6 +2,7 @@ package com.example.contextodemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -36,6 +37,7 @@ public class Splash extends AppCompatActivity {
         }, 5000 );
     }
 
+    @SuppressLint("MissingSuperCall")
     @Override
     public void onStop() {
         super.onPause();  // Always call the superclass method first
